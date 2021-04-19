@@ -1,25 +1,20 @@
 import './App.css';
 import { NavLink, Route } from 'react-router-dom';
+import Base from './pages/base';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="app-header">
         <div>react知识点总结</div>
         <ul>
-          <li>
-            <NavLink activeClassName="active" to="/demo">demo</NavLink>
+          <li className="nav-item">
+            <NavLink activeClassName="active" to="/base">base</NavLink>
           </li>
         </ul>
       </header>
-      <section>
-        <aside>
-          <li>基础知识</li>
-        </aside>
-        <main>
-          <Route path=''></Route>
-        </main>
-      </section>
+      <Route path="/base" component={Base}></Route>
     </div>
   );
 }
