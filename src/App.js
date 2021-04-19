@@ -1,4 +1,4 @@
-import './App.css';
+import './app.scss';
 import { NavLink, Route } from 'react-router-dom';
 import Base from './pages/base';
 

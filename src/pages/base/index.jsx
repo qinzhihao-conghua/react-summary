@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink, Route } from 'react-router-dom';
 import CommentDoc from '../comment-doc';
-import './base.css';
+import './base.scss';
 
 export default class Base extends Component {
   render() {
