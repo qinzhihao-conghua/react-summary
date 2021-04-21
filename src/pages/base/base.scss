@@ -1,19 +1,43 @@
 .main-block {
-    display: flex;
-    height: calc(100vh - 57px);
+  display: flex;
+  height: calc(100vh - 56px);
 
-    .side-bar {
-        flex: 3;
-        margin-right: 16px;
-        border-right: 1px solid #ddd;
-        box-shadow: 1px 2px 8px 0px #ddd;
-    }
+  .nav-link {
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 100%;
+    padding: 8px 24px;
+    width: 100%;
+  }
+
+  .base-active {
+    border-color: #219cf3;
+    background-color: #219cf3;
+    color: #fff;
+  }
+
+  .side-bar {
+    flex: 3;
+    max-width: 300px;
+    margin: 12px;
+    border-right: 1px solid #ddd;
+    box-shadow: 1px 2px 8px 0px #ddd;
+  }
+
+  .nav {
+    margin-top: 24px;
 
     .nav-item {
-        padding: 6px;
+      // padding: 6px;
     }
+  }
 
-    .main-content {
-        flex: 7;
-    }
+  .main-content {
+    flex: 7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 24px;
+    margin: 12px;
+    box-shadow: 1px 2px 8px 0px #ddd;
+  }
 }

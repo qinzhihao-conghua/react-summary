@@ -1,5 +1,5 @@
 import './app.scss';
-import { NavLink, Route } from 'react-router-dom';
+import { NavLink, Route, Redirect } from 'react-router-dom';
 import Base from './pages/base';
 
 
@@ -8,9 +8,10 @@ function App() {
     <div className="App">
       <header className="app-header">
         <div>react知识点总结</div>
-        <ul>
+        <ul className="nav">
           <li className="nav-item">
-            <NavLink activeClassName="active" to="/base">base</NavLink>
+            <NavLink activeClassName="app-active" to="/base">base</NavLink>
+            <Redirect to="/base"></Redirect>
           </li>
         </ul>
       </header>
